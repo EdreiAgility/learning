@@ -1,0 +1,15 @@
+version: '3'
+services:
+  learning-main:
+    build: 
+      context: ../learning-main
+    image: learning-main:latest
+    ports: 
+      - "5008:5008"
+    restart: always
+
+volumes:
+  db-data:
+    driver: local
+
+    
