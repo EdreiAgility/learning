@@ -6,7 +6,7 @@ import zmq
 class MainHandler(tornado.web.RequestHandler):
 
     def get(self):
-        response = "Hello World... Server responsed"
+        response = "Hello World..."
         self.write(response)
 
 
